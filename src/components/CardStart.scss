@@ -1,0 +1,32 @@
+@import '../base.scss';
+
+.card-start{
+    
+    align-items: center;
+    padding:0 20px;
+    .icon{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    h3,p{
+        text-align: center;
+    }
+}
+
+
+.button-fill{
+    width: 288px;
+    height: 56px;
+    background: $primary-color;
+    box-shadow: 10px 10px 20px #FFF0C0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    outline: none;
+    border: none;
+    color:$secondary-color;
+    margin-top: 35px;
+}
