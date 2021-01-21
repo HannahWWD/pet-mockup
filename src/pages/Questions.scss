@@ -1,0 +1,32 @@
+@import '../base.scss';
+
+
+.main-container-questions{
+    box-sizing: border-box;
+    padding: 0 100px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/bg-pattern.png')
+
+}
+
+.questions-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    &>div:nth-child(1),&>div:nth-child(3){
+        opacity: 0.5;
+        button{
+            pointer-events: none;
+        }
+    }
+}
+
+.placeholder{
+    width: 352px;
+    height: 472px;
+}
