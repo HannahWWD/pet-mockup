@@ -1,0 +1,81 @@
+@import '../base.scss';
+
+.profile-wrapper{
+    h2,h3,p{
+        margin:0;
+        padding:0;
+    }
+    width: 385px;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+
+
+.profile-top{
+    padding:16px;
+    display: flex;
+    align-items: center;
+    p{
+        padding-left: 8px;
+    }
+}
+
+.profile-bottom{
+    position: absolute;
+    display:grid;
+    grid-template-columns: 84% 16%;
+    bottom: 0;
+    box-sizing: border-box;
+    width:100%;
+    height:110px;
+    
+
+    &>div:first-of-type{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-left: 24px;
+        background: rgba(255, 255, 255, 0.28);
+        p{
+            font-family: $title-font;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    &>div:last-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-color;
+        border-radius: 0px 0px 10px 0px;
+        
+    }
+}
+
+.chip-groups{
+    &>div{
+        border: 1px solid $primary-color;
+        background-color: rgba(242, 201, 76, 0.12);
+        font-family: inherit;
+        font-size: 14px;
+        margin-right: 8px;
+    }
+    svg{
+        color:$primary-color;
+    }
+    span{
+        color:#000;
+    }
+    
+}

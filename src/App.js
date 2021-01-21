@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import {BrowserRouter,Route} from 'react-router-dom'
 import './App.scss'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
 import Questions from './pages/Questions'
 import Result from './pages/Result'
 
@@ -19,8 +21,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      {/* <CardStart /> */}
-      <Route exact path="/" render={(props)=>(<Questions {...props} getFinalAnswer={getFinalAnswer} />)} /> 
+      <Navbar />
+      <Route exact path="/" component={Home} />
+      <Route path="/questions" render={(props)=>(<Questions {...props} getFinalAnswer={getFinalAnswer} />)} /> 
       <Route path="/result" render={()=>(<Result finalAnswer={finalAnswer} />)} />
       </div>
     </BrowserRouter>

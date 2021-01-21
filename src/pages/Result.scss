@@ -1,3 +1,51 @@
+@import '../base.scss';
+
 .result {
-    background-color: salmon;
+   padding-top: 108px;
+   h2,p{
+       margin:0;
+       padding: 0;
+   }
+}
+
+.result-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-title{
+    h2{
+        margin: 0 8px;
+        &:nth-of-type(2){
+            border-bottom: 2px dashed #000;
+        }
+    }
+    display:flex;
+    align-items: center;
+    svg{
+        color:$highlight-color;
+    }
+}
+
+.result-instruction{
+    margin-top: 20px;
+    text-align: center;
+    span{
+        color:$highlight-color;
+    }
+    p{
+        margin: 4px 0;
+    }
+}
+
+.result-wrapper{
+    box-sizing: border-box;
+    margin:28px 0;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 24px;
+    row-gap: 24px;
+    justify-content: center;
 }

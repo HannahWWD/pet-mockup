@@ -1,5 +1,7 @@
 @import './base.scss';
 
+
+
 body{
     font-family: $body-font;
     font-size: 17px;
@@ -25,3 +27,37 @@ h3,button{
 
 }
 
+
+.button-fill{
+    width: 288px;
+    height: 56px;
+    background: $primary-color;
+    box-shadow: 10px 10px 20px #FFF0C0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    outline: none;
+    border: none;
+    color:$secondary-color;
+    margin-top: 35px;
+    cursor:pointer;
+}
+
+.button-contour{
+    width: 288px;
+    height: 56px;
+    background: none;
+    color:#000;
+    box-shadow: 10px 10px 20px #FFF0C0;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    outline: none;
+    border: 1px solid $primary-color;
+    margin-top: 35px;
+    cursor:pointer;
+}
