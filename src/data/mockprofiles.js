@@ -59,7 +59,7 @@ const mockProfiles = [
     link:
       "https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixid=MXwxNjQwODB8MHwxfGNvbGxlY3Rpb258OHwyMTk1NTQzNHx8fHx8Mnw&ixlib=rb-1.2.1&w=800",
     name: "Aubry",
-    age: [0, 2],
+    age: [5, 2],
     tags: ["confident", "friendly"],
     shelter:"PAWS cat city",
   },
@@ -67,7 +67,7 @@ const mockProfiles = [
     link:
       "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixid=MXwxNjQwODB8MHwxfGNvbGxlY3Rpb258OXwyMTk1NTQzNHx8fHx8Mnw&ixlib=rb-1.2.1&w=800",
     name: "Krystyna",
-    age: [5, 3],
+    age: [0, 3],
     tags: ["confident", "protective"],
     shelter:"Homeward pet adoption center",
   },

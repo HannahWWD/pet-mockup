@@ -45,6 +45,7 @@ export default function Card(props) {
           fontSize: 17,
           lineHeight: 1,
           fontFamily: "'Mulish', sans-serif",
+          textTransform:"capitalize",
         },
       },
       MuiTypography: {

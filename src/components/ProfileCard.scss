@@ -24,6 +24,7 @@
     align-items: center;
     p{
         padding-left: 8px;
+        text-transform: capitalize;
     }
 }
 
@@ -70,6 +71,7 @@
         font-family: inherit;
         font-size: 14px;
         margin-right: 8px;
+        text-transform: capitalize;
     }
     svg{
         color:$primary-color;
