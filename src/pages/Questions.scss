@@ -30,3 +30,16 @@
     width: 352px;
     height: 472px;
 }
+
+
+@media only screen and (max-width:$md){
+    
+    .questions-wrapper{
+        grid-template-columns: 1fr;
+        &>div:nth-child(1),&>div:nth-child(3){
+            display:none;
+        }
+
+    }
+    
+}

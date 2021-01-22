@@ -59,3 +59,15 @@
     text-align: center;
     
 }
+
+@media only screen and (max-width:$md){
+    .result-wrapper{
+        grid-template-columns: repeat(2,350px);
+    }
+}
+
+@media only screen and (max-width:$sm){
+    .result-wrapper{
+        grid-template-columns: auto;
+    }
+}
