@@ -6,6 +6,11 @@
        margin:0;
        padding: 0;
    }
+   a{
+    text-decoration: none;
+    color:$highlight-color;
+    text-align: center;
+}
 }
 
 .result-text{
@@ -48,4 +53,9 @@
     column-gap: 24px;
     row-gap: 24px;
     justify-content: center;
+}
+
+.empty-ans-error{
+    text-align: center;
+    
 }

@@ -5,31 +5,31 @@ import Chip from "@material-ui/core/Chip";
 import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
-export default function ProfileCard() {
+export default function ProfileCard(props) {
   return (
     <div
       className="profile-wrapper"
       style={{
-        backgroundImage: `url("https://images.unsplash.com/photo-1583524505974-6facd53f4597?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80")`,
+        backgroundImage: `url(${props.link})`,
       }}
     >
       <div className="profile-top">
         <LocationOnOutlinedIcon />
-        <p>PAWS Cat City</p>
+        <p>{props.shelter}</p>
       </div>
       <div className="profile-bottom">
         <div>
-          <h3>Alexis</h3>
-          <p>1 years, 3 months</p>
+          <h3>{props.name}</h3>
+          <p>{`${props.age[0]} years, ${props.age[1]} months`}</p>
           <div className="chip-groups">
             <Chip
               icon={<EmojiEmotionsIcon />}
-              label="Friendly"
+              label={props.tags[0]}
               variant="outlined"
             />
             <Chip
               icon={<EmojiEmotionsIcon />}
-              label="Friendly"
+              label={props.tags[1]}
               variant="outlined"
             />
           </div>

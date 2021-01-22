@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Questions from './pages/Questions'
 import Result from './pages/Result'
+//import MockCatProfiles from './data/MockCatProfiles'
 
 
 
@@ -17,6 +18,8 @@ function App() {
   }
 
   console.log(finalAnswer)
+  // get mock api
+  // MockCatProfiles()
 
   return (
     <BrowserRouter>
